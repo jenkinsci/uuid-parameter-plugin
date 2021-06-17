@@ -1,3 +1,14 @@
-# jenkins-plugins
+# UUID Parameter
 
-Plugins for use with Jenkins servers.
+## Introduction
+
+This plugin will produce randomly generate UUID-v4 values when no default value is specified. When a default value is specified, it must follow UUID-v4 format.
+
+UUID-v4 format:  `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`.
+
+Example: `9f23cdfb-f9d2-4520-a780-19683ed8ffaa`.
+
+## LICENSE
+
+Licensed under MIT, see [LICENSE](LICENSE.md)
+
