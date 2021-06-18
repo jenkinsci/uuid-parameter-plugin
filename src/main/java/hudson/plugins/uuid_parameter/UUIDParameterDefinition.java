@@ -58,8 +58,10 @@ public class UUIDParameterDefinition extends ParameterDefinition {
     @Override
     public ParameterValue createValue(StaplerRequest req, JSONObject jo) {
         StringParameterValue value = req.bindJSON(StringParameterValue.class, jo);
+        if (value.getValue().isEmpty()){
+            value = getDefaultParameterValue();
+        }
         return value;
-        //   return getDefaultParameterValue();
     }
 
     @Extension
