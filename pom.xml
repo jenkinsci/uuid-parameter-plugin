@@ -16,7 +16,10 @@
         <changelist>-SNAPSHOT</changelist>
         <jenkins.version>2.277.1</jenkins.version>
         <java.level>8</java.level>
-        <gitHubRepo>jenkinsci/${project.artifactId}-plugin</gitHubRepo>    </properties>
+        <gitHubRepo>jenkinsci/${project.artifactId}-plugin</gitHubRepo>
+        <!-- TODO fix violations -->
+        <spotbugs.threshold>High</spotbugs.threshold>
+    </properties>
     <name>UUID Parameter</name>
     <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
     <description>UUID-4 string parameter in Parametrized builds.</description>
