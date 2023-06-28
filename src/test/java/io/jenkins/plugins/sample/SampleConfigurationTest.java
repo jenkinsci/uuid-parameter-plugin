@@ -1,14 +1,12 @@
 package io.jenkins.plugins.sample;
 
-import com.gargoylesoftware.htmlunit.html.HtmlForm;
-import com.gargoylesoftware.htmlunit.html.HtmlTextInput;
 import org.junit.Test;
-import static org.junit.Assert.*;
-import org.junit.Rule;
-import org.jvnet.hudson.test.RestartableJenkinsRule;
 
 public class SampleConfigurationTest {
 
+    /*
+    This test case never worked in the first place since its introduction: https://github.com/jenkinsci/uuid-parameter-plugin/commit/535599970d34e286ce7458a6122bc140df02bf06
+    There's no such "SampleConfiguration" class.
     @Rule
     public RestartableJenkinsRule rr = new RestartableJenkinsRule();
 
@@ -25,6 +23,16 @@ public class SampleConfigurationTest {
         rr.then(r -> {
             assertEquals("still there after restart of Jenkins", "hello", SampleConfiguration.get().getLabel());
         });
+    }
+
+     */
+
+    @Test
+    public void anything() {
+        /*
+         * Intentionally blank. We just want a test that runs with JUnit so that buildPlugin() works
+         * in the Jenkinsfile.
+         */
     }
 
 }
